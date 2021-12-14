@@ -1,0 +1,8 @@
+name: 'Draggable Form Block'
+type: module
+description: 'Form block with draggable input fields.'
+core_version_requirement: ^8.8.0 || ^9.0
+version: '1.0'
+package: ''
+dependencies:
+  - linkit

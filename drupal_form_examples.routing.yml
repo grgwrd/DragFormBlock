@@ -1,0 +1,9 @@
+cust_web_settings.social_form:
+  path: '/admin/config/custom-web-settings/social'
+  defaults:
+    _form: '\Drupal\cust_web_settings\Form\SocialForm'
+    _title: 'SocialForm'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: true

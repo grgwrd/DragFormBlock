@@ -1,0 +1,13 @@
+{
+    "name": "drupal-form-examples",
+    "type": "drupal-module",
+    "description": "Drupal module with example block forms and admin configs.",
+    "keywords": [
+    ],
+    "homepage": "",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "",
+        "source": ""
+    }
+}

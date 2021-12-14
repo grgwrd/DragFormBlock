@@ -1,0 +1,13 @@
+cust_web_settings.admin_section:
+  title: 'Custom Website Settings'
+  description: 'Custom website settings for Drupal form examples.'
+  parent: system.admin_config
+  route_name: system.file_system_settings
+  weight: -100
+
+cust_web_settings.social:
+  title: 'Social Media'
+  description: 'Edit social links.'
+  parent: cust_web_settings.admin_section
+  route_name: cust_web_settings.social_form
+  weight: 0

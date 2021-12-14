@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * Contains drupal_form_examples.module.
+ *
+ *
+ * hooks inside module
+ * @drag_form_block_help
+ * General help information for block details.
+ *
+ * @drag_form_block_theme
+ * Returns template for theme.
+ *
+ * @drag_form_block_page_attachments_alter
+ * Adds Google analytics template to the page header.
+ *
+ * @drag_form_block_node_access
+ * Prevents node delete operation for moderation state 'Template'.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Access\AccessResult;
+
+/**
+ * Implements hook_help().
+ */
+function drag_form_block_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the drag_form_block module.
+    case 'help.page.drupal_form_examples':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Configure Draggable Block forms and Social links.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+
+function drag_form_block_theme(){
+
+        return [
+
+        'custom_links_block' => [
+          'variables' => ['links' => NULL],
+          'render element' => 'children',
+        ],
+
+        'locked_footer_links' => [
+          'variables' => ['locked_links' => NULL],
+          'render element' => 'children',
+        ],
+
+    ];
+}
