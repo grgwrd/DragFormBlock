@@ -28,7 +28,7 @@ use Drupal\Core\Access\AccessResult;
 /**
  * Implements hook_help().
  */
-function drag_form_block_help($route_name, RouteMatchInterface $route_match) {
+function drupal_form_examples_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     // Main module help for the drag_form_block module.
     case 'help.page.drupal_form_examples':
@@ -45,7 +45,7 @@ function drag_form_block_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_theme().
  */
 
-function drag_form_block_theme(){
+function drupal_form_examples_theme(){
 
         return [
 
