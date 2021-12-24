@@ -52,7 +52,7 @@ class LinksBlock extends BlockBase {
 
     $rows = [];
 
-    // Check for already configured departmental links
+    // Check for already configured links
     if($config['linksBlockConfig']){
       $rows = $config['linksBlockConfig'];
     }
@@ -205,7 +205,7 @@ class LinksBlock extends BlockBase {
     // Rows have values
     if (isset($rows)) {
 
-      // Create links for Info for Block
+      // Create links for Block
       if (count($rows) > 0) {
 
         foreach($rows as $key=>$row){
