@@ -77,7 +77,7 @@ class LockedLinksBlock extends BlockBase {
       $links = $config['footerlinks'];
     }
 
-    /* Default values for footer links for KU CMS
+    /* 
      *
      * Block is setup to let user edit the url
      * and is able to enable/disable link from display.
